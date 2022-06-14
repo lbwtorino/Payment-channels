@@ -1,0 +1,9 @@
+rm -f data/A/*
+rm -f data/B/*
+rm -f data/cid/*
+rm -f data/Tower/*
+rm -f data/Bitmap/*
+rm -f short/AShort/*
+rm -f short/BShort/*
+rm -f short/cidShort/*
+truffle test ./run/run_"$1".js
