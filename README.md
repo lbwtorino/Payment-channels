@@ -31,6 +31,8 @@ For instance, to test the number of 1 channel's termination, by running `./run.s
 
 To test the dispute, running `./run.sh dispute`.
 
+Try to customize your own testing script, [reference](https://www.trufflesuite.com/)
+
 ## Contact
 
 Bowen: bowen_liu@mymail.sutd.edu.sg 
