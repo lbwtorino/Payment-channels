@@ -26,8 +26,25 @@ Fail-safe watchtower and short-lived assertions for payment channels, AsiaCCS'20
 
 `/run` includes the test use cases, you may play around, and define your own test case by following the syntax of Truffle+Ganache.
 
-For instance, to test the number of 1 channel's termination, by running `./run.sh channel1`. Similarly, testing the termination for 10 channels, running 
-`./run.sh channel1`
+
+To complile and deploy the `Watchtower contract` and `Payment channel contrat` on Truffle testnet, 
+```sh
+$ truffle compile
+$ truffle migrate
+```
+
+Please note that `truffle migrate` will automatically read the deployment file (predefined rules) in `/migrations` folder.
+
+To test `one` channel's termination, by running `./run.sh channel1`. 
+```sh
+$ ./run.sh channel1
+```
+It will execute the testing use case in `/run` folder with the logic of interactions among Alice, Bob, off-chain watchtower.
+
+Similarly, testing the termination for 10 channels, running 
+```sh
+$ ./run.sh channel10
+```
 
 To test the dispute, running `./run.sh dispute`.
 
